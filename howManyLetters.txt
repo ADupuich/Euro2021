@@ -1,0 +1,11 @@
+Lloris : 6
+Pavard : 6
+Varane : 6
+Kimpembe : 8
+Hernandez : 9
+Pogba : 5
+Kante : 5
+Rabiot : 6
+Griezmann : 9
+Benzema : 7
+Mbappe : 6
