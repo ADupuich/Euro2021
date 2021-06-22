@@ -37,7 +37,7 @@ public class PlayersMap {
 				final String Newligne = System.getProperty("line.separator");
 				while (iterator.hasNext()) {
 					str = iterator.next();
-					nombreDeLettres = str.length() - str.replace("a", "").length();
+					nombreDeLettres = str.length();
 					writer.write(str + " : " + nombreDeLettres + Newligne);
 				}
 				writer.close();
