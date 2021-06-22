@@ -28,7 +28,7 @@ public class PlayersMap {
 		}
 
 		for (String str : joueurs) {
-
+//test
 			try {
 
 				final FileWriter writer = new FileWriter("howManyLetters.txt");
