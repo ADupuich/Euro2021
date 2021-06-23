@@ -8,11 +8,11 @@ public class EnregistreLeFichier implements IFichier {
 
 	public EnregistreLeFichier(ArrayList<String> joueurs) throws IOException {
 
-		FileWriter writer = new FileWriter("howManyLetters.txt");
+		final FileWriter writer = new FileWriter("howManyLetters.txt");
 		Integer nombreDeLettres;
-		String Newligne = System.getProperty("line.separator");
+		final String Newligne = System.getProperty("line.separator");
 
-		for (String str : joueurs) {
+		for (final String str : joueurs) {
 
 			try {
 				nombreDeLettres = str.length();
@@ -23,6 +23,12 @@ public class EnregistreLeFichier implements IFichier {
 			}
 		}
 		writer.close();
+	}
+
+	@Override
+	public void EnregistreLeFichier(ArrayList<String> joueurs) {
+		// TODO Auto-generated method stub
+
 	}
 
 }
