@@ -6,9 +6,9 @@ public class PlayersMap {
 
 	public static void main(String[] args) throws Exception {
 
-		PlayersList players = new PlayersList();
-		ArrayList<String> joueurs = players.Liste();
-		EnregistreLeFichier readyPourEnregistrer = new EnregistreLeFichier(joueurs);
+		final PlayersList players = new PlayersList();
+		final ArrayList<String> joueurs = players.Liste();
+		final EnregistreLeFichier readyPourEnregistrer = new EnregistreLeFichier();
 		readyPourEnregistrer.EnregistreLeFichier(joueurs);
 
 	}
