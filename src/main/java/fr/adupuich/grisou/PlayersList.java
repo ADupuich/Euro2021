@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class PlayersList {
 
@@ -25,6 +26,7 @@ public class PlayersList {
 			e.printStackTrace();
 		}
 
+		Collections.sort(joueurs);
 		return joueurs;
 	}
 
