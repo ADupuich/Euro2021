@@ -9,7 +9,7 @@ public class PlayersMap {
 		final PlayersList players = new PlayersList();
 		final ArrayList<String> joueurs = players.Liste();
 		final EnregistreLeFichier readyPourEnregistrer = new EnregistreLeFichier();
-		readyPourEnregistrer.EnregistreLeFichier(joueurs);
+		readyPourEnregistrer.enregistre(joueurs);
 
 	}
 }

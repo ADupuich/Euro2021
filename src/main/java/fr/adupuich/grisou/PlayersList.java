@@ -5,15 +5,14 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 
-public class PlayersList implements IPlayersList {
+public class PlayersList {
 
-	@Override
 	public ArrayList<String> Liste() {
 
-		ArrayList<String> joueurs = new ArrayList<String>();
+		final ArrayList<String> joueurs = new ArrayList<String>();
 
 		try {
-			BufferedReader reader = new BufferedReader(
+			final BufferedReader reader = new BufferedReader(
 					new FileReader("/home/amaury/eclipse-workspace/grisou/src/main/java/Joueurs.txt"));
 			String line = reader.readLine();
 
@@ -22,7 +21,7 @@ public class PlayersList implements IPlayersList {
 				line = reader.readLine();
 			}
 			reader.close();
-		} catch (IOException e) {
+		} catch (final IOException e) {
 			e.printStackTrace();
 		}
 
