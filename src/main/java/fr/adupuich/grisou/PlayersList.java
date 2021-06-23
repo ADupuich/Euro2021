@@ -1,15 +1,19 @@
-package grisou;
+package fr.adupuich.grisou;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 
-public class SetUp implements TableauJoueurs {
+public class PlayersList implements IPlayersList {
 
-	public ArrayList<String> ReadPlayersFile() {
+	@Override
+	public ArrayList<String> Liste() {
+
+		ArrayList<String> joueurs = new ArrayList<String>();
+
 		try {
-			final BufferedReader reader = new BufferedReader(
+			BufferedReader reader = new BufferedReader(
 					new FileReader("/home/amaury/eclipse-workspace/grisou/src/main/java/Joueurs.txt"));
 			String line = reader.readLine();
 
@@ -18,10 +22,11 @@ public class SetUp implements TableauJoueurs {
 				line = reader.readLine();
 			}
 			reader.close();
-		} catch (final IOException e) {
+		} catch (IOException e) {
 			e.printStackTrace();
 		}
 
 		return joueurs;
 	}
+
 }
